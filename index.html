@@ -1,0 +1,37 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <button class="theme-toggle-btn" id="theme-toggle-btn">Light theme</button>
+        
+        <header>
+            <label for="color-input" class="hidden">Choose a seed color</label>
+            <input type="color" value="#5088C3" id="color-input">
+            <label for="color-mode" class="hidden">Choose a color mode</label>
+            <select name="color-mode" class="color-mode" id="color-mode">
+                <option value="monochrome">Monochrome</option>
+                <option value="monochrome-dark">Monochrome dark</option>
+                <option value="monochrome-light">Monochrome light</option>
+                <option value="analogic">Analogic</option>
+                <option value="complement">Complement</option>
+                <option value="analogic-complement">Analogic complement</option>
+                <option value="triad">Triad</option>
+                <option value="quad">Quad</option>
+            </select>
+            <button class="color-btn" id="color-btn">Get color scheme</button>
+        </header>
+        
+        <main>
+            <div class="container" id="color-container">
+                <!-- color scheme here -->
+            </div>
+        </main>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

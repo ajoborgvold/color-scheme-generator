@@ -123,10 +123,8 @@ function getColorScheme() {
 //----- copy to clipboard function-----//
 
 function copyHexCode(hex) {
-//-- To avoid getting an error in the console, I've commented out the two lines of code below because they don't work on Scrimba. When I use VS code to run the code locally, everything works. --//
-
-    // navigator.clipboard.writeText(hex).then(() => console.log('Copying to clipboard was successful!'),
-    //     err => console.error('Could not copy text: ', err))
+    navigator.clipboard.writeText(hex).then(() => console.log('Copying to clipboard was successful!'),
+        err => console.error('Could not copy text: ', err))
 
     const colorCodes = document.getElementsByClassName('hex-code')
     for (let code of colorCodes) {
